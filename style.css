@@ -3,7 +3,7 @@ body {
   font-family:'Courier New', Courier, monospace;
   font-size: large;
   /* background-image: url('https://i.pinimg.com/originals/17/5d/d0/175dd03c82f0284467cb123e56fc7a2e.jpg'); */
-  background: linear-gradient(to right, #834d6f, #B2AC88);
+  background: linear-gradient(to right, #834d6f, #5b875b);
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 .footer {
-  background: linear-gradient(to right, #B2AC88, #ffdfbf);
+  background: linear-gradient(to right, #5b875b, #ffdfbf);
   color: #000;
   padding: 20px;
   text-align: center;
