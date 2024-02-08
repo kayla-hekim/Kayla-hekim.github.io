@@ -42,14 +42,6 @@ body {
   margin-right: 40px;
   font-family: 'Courier New', Courier, monospace;
 }
-.logo {
-  padding: 15px;
-}
-.logo a {
-  color: #2f3020;
-  font-weight: bold;
-  padding: 40px;
-}
 .footer {
   background: linear-gradient(to right, #2f3020, #ffdfbf);
   color: #000;
