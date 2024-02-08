@@ -1,45 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family:'Courier New', Courier, monospace;
+  font-size: large;
+  /* background-image: url('https://i.pinimg.com/originals/17/5d/d0/175dd03c82f0284467cb123e56fc7a2e.jpg'); */
+  background: linear-gradient(to right, #834d6f, #2f3020);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
-
-header {
-    background-color: red;
-    padding: 20px;
-    text-align: center;
+.navbar {
+  background-color: #834d6f;
+  background: linear-gradient(to right, #ffdfbf, #834d6f);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+.navbar a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 40px;
+  height: 20px;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.navbar a:hover {
+  text-decoration: underline;
 }
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
+.main-content {
+  padding: 190px;
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
 }
-
-section {
-    padding: 50px;
+.section {
+  color: #fff;
+  padding: 40px;
+  margin-bottom: 20px;
 }
-
-#about {
-    background-color: blue;
+.section h2 {
+  margin-top: 0;
+  margin-right: 40px;
+  font-family: 'Courier New', Courier, monospace;
 }
-
-#projects {
-    background-color: red;
+.logo {
+  padding: 15px;
 }
-
-#contact {
-    background-color: blue;
+.logo a {
+  color: #2f3020;
+  font-weight: bold;
+  padding: 40px;
+}
+.footer {
+  background: linear-gradient(to right, #2f3020, #ffdfbf);
+  color: #000;
+  padding: 20px;
+  text-align: center;
 }
