@@ -1,15 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll('nav ul li a');
+    var navbarToggle = document.querySelector(".navbar-toggle");
+    var navbarLinks = document.querySelector(".navbar-links");
 
-    navLinks.forEach(function(navLink) {
-        navLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-                // Scroll smoothly to the target section
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
+    navbarToggle.addEventListener("click", function() {
+        navbarLinks.classList.toggle("active");
     });
 });
