@@ -26,11 +26,14 @@ body {
   text-decoration: underline;
 }
 .main-content {
-  padding: 190px;
+  padding: 200px;
   font-size: xx-large;
   display: flex;
   justify-content: flex-start;
   font-weight: bold;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .section {
   color: #fff;
