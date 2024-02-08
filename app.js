@@ -1,7 +1,15 @@
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('nav ul li a');
 
-menu.addEventListener('click', function() {
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
+    navLinks.forEach(function(navLink) {
+        navLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                // Scroll smoothly to the target section
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
 });
