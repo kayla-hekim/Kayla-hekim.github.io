@@ -1,0 +1,74 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #834d6f;
+    background: linear-gradient(to right, #ffdfbf, #834d6f);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 40px;
+    height: 20px;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-section {
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #5b875b, #834d6f);
+  }
+
+  form {
+    background: #ffdfbf;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    justify-content: center;
+  }
+
+  form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: #000;
+    outline-style: double;
+    background: #fff;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    max-width: 560px;
+    min-width: 560px;
+    color: #000;
+  }
+
+  form button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 15px;
+    background: #5b875b;
+    color: #fff;
+    font-size: 18px;
+    outline: #000;
+    outline-style: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+  }
