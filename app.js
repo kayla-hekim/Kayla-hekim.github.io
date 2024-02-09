@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
         navbarLinks.classList.toggle("active");
     });
 });
+
+const name = document.querySelector(".name")
+
+function changeColor(color) {
+  name.style.color = color;
+}
