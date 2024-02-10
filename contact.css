@@ -40,28 +40,30 @@ body {
     height: 100vh;
     background: linear-gradient(to bottom, #5b875b, #834d6f);
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    justify-content: space-evenly;
   }
 
   form {
     background: #ffdfbf;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    gap: 20px;
     padding: 2vw 4vw;
     width: 90%;
     max-width: 600px;
-    border-radius: 10px;
+    border-radius: 30px;
     position: absolute;
     justify-content: center;
     display: inline-block;
+    
   }
 
   form input, form textarea {
-    border: 0;
+    border: none;
     margin: 10px 0;
     padding: 20px;
-    outline: #000;
+    outline: none;
     outline-style: double;
     background: #fff;
     font-size: 16px;
@@ -70,6 +72,13 @@ body {
     max-width: 560px;
     min-width: 560px;
     color: #000;
+    border-radius: 5px;
+    resize:vertical;
+
+  }
+
+  .contact-inputs::placeholder {
+    color: #a9a9a9;
   }
 
   form button {
@@ -85,4 +94,14 @@ body {
     width: 150px;
     margin: 20px auto 0;
     border-radius: 30px;
+  }
+
+  @media (max-width: 800px) {
+    .contact-inputs{
+      width: 80vw;
+    }
+    form input, form textarea {
+      max-width: 410px;
+      min-width: 410px;
+    } 
   }
