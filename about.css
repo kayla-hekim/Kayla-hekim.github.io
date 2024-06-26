@@ -86,7 +86,7 @@ body {
     bottom: 0;
     left: 90px;
     width: 400px;
-    height: 750px;
+    height: 800px;
     background-color: #033C43;
     font-family: 'Intro Regular Alt', sans-serif;
     color: #fff;
@@ -118,7 +118,7 @@ body {
     border-radius: 50%;
 }
 
-/* Bige white rectangle under green rectangle */
+/* Big white rectangle under green rectangle */
 .bigwhiterectangle {
     position: fixed;
     bottom: 0;
@@ -146,5 +146,5 @@ body {
     padding-top: 255px;
     font-size: 100px;
     font-style: bold;
-    position: fixex;
+    position: fixed;
 }
