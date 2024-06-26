@@ -1,72 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="app.js"></script>
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's Kayla - Contact</title>
+    <title>Contact Me | Kayla Kim</title>
     <link rel="stylesheet" href="contact.css">
 </head>
-
 <body>
-    <div class = "container">
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="logo.png" width="70" height="70">
+        </a>
+        <nav class="navbar">
+            <a href="#">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#">PROJECTS</a>
+            <a href="contact.html" class="no-underline">
+                <span>CONTACT</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="bigwhiterectangle"></div>
+        <div class="envelope-back"></div>
+        <div class="envelope-letter">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title"></div>
+                <input type="hidden" name="access_key" value="22582c75-6851-4720-b536-2d82d2f05bb7">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
 
-    </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail() {
+                    Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "kayla.hekim@gmail.com",
+                        Password : "Loveheartz10",
+                        To : 'kayla.hekim@gmail.com',
+                        From : document.getElementById("email").value,
+                        Subject : "New Contact Form Inquiry",
+                        Body : "And this is the body"
+                    }).then(
+                    message => alert(message)
+                    );
+                }
+            </script>
+        </div>
+        <div class="envelope-closer">
+            <h1>CONTACT ME</h1>
+        </div>
+    </main>
 </body>
-    <div class="navbar">
-        <a href="index.html">
-            <button style = "background-color: transparent; border-color: transparent; cursor: pointer; 
-            color: #fff; font-size: 20px; font-family:'Courier New', Courier, monospace; font-weight: bold;">Home</button>
-        </a>
-        <a href="about.html">
-            <button style = "background-color: transparent; border-color: transparent; cursor: pointer;
-            color: #fff; font-size: 20px; font-family:'Courier New', Courier, monospace; font-weight: bold;">About</button>
-        </a>
-        <a href="projects.html">
-            <button style = "background-color: transparent; border-color: transparent; cursor: pointer;
-            color: #fff; font-size: 20px; font-family:'Courier New', Courier, monospace; font-weight: bold;">Projects</button>
-        </a>
-        <a href="contact.html">
-            <button style = "background-color: transparent; border-color: transparent; cursor: pointer;
-            color: #fff; font-size: 20px; font-family:'Courier New', Courier, monospace; font-weight: bold;">Contact</button>
-        </a>
-    </div>
-
-    <div class="title">
-        <h1>Contact Me!</h1>
-    </div>
-    
-
-    <div class="contact-section">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-            <div class="contact-left-title">
-                
-            </div>
-            <input type="hidden" name="access_key" value="22582c75-6851-4720-b536-2d82d2f05bb7">
-            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-            <button type="submit">Submit -></button>
-        </form>
-    </div>
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "kayla.hekim@gmail.com",
-                Password : "Loveheartz10",
-                To : 'kayla.hekim@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Inquiry",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
-
-<body>
-
+</html>
