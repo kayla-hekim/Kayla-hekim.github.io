@@ -120,12 +120,14 @@ body {
 
 .envelope-closer h1 {
     color: #033C43;
-    position: absolute;
-    top: -180px;
-    font-size: 80px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(-90%);
+    font-size: 70px;
     text-align: center;
-    left: -195px;
-    font-style: bold
+    font-style: bold;
+    line-height: 60px;
 }
 
 /* Big gray box that looks like the letter with the form */
