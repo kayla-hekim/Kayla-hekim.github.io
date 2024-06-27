@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 9;
 }
 
 
@@ -137,14 +137,19 @@ body {
     padding-left: 570px;
     padding-top: 50px;
     padding-right: 50px;
+    z-index: 10;
 }
 
 /* "ABOUT ME" over the white rectangle */
 .ABOUT-ME-text {
     color: #fff;
     padding-left: 570px;
-    padding-top: 255px;
+    padding-top: 17%;
     font-size: 100px;
     font-style: bold;
     position: fixed;
+}
+
+.links {
+    color: #033C43;
 }
