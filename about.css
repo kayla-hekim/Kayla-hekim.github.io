@@ -105,7 +105,7 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 25px;
-    font-size: 27px;
+    font-size: 24px;
 }
 
 /* photo in that weird ass shape */
@@ -127,18 +127,26 @@ body {
     height: 450px;
     background-color: #fff;
     z-index: -1;
-    font-family: 'Intro Regular Alt', sans-serif;
-    font-style: bold;
-    font-size: 27px;
-}
-
-.bigwhiterectangle p {
+  }
+  
+  .whitetext {
+    position: fixed;
+    bottom: 0;
+    left: 570px;
+    right: 30px; /* This replaces width + padding-right */
+    top: auto; /* Ensure it doesn't override bottom */
+    height: 450px; /* Match white rectangle height */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 20px 0 0; /* top, right, bottom, left */
+    z-index: 1;
     color: #033C43;
-    padding-left: 570px;
-    padding-top: 50px;
-    padding-right: 50px;
-    z-index: 10;
-}
+    font-family: 'Intro Regular Alt', sans-serif;
+    font-size: 27px;
+    overflow: hidden;
+  }
+  
 
 /* "ABOUT ME" over the white rectangle */
 .ABOUT-ME-text {
@@ -153,3 +161,72 @@ body {
 .links {
     color: #033C43;
 }
+
+
+
+/* 
+/* Base media queries for responsiveness */
+
+/* For devices with a width of up to 1024px (tablets and small desktops) */
+/* @media (max-width: 1024px) {
+    .wrapper .sidebar {
+        width: 25%;
+    }
+
+    .main_content {
+        margin-left: 25%;
+    }
+
+    .main_content .greeting {
+        font-size: 45px;
+        left: 30%;
+    }
+
+    .main_content .info {
+        font-size: 24px;
+    }
+} */
+
+/* For devices with a width of up to 768px (large smartphones and small tablets) */
+/* @media (max-width: 768px) {
+    .wrapper .sidebar {
+        width: 30%;
+    }
+
+    .main_content {
+        margin-left: 30%;
+    }
+
+    .main_content .greeting {
+        font-size: 40px;
+        left: 25%;
+    }
+
+    .main_content .info {
+        font-size: 20px;
+    }
+} */
+
+/* For mobile devices with a width of up to 480px */
+/* @media (max-width: 480px) {
+    .wrapper .sidebar {
+        width: 40%;
+    }
+
+    .main_content {
+        margin-left: 40%;
+    }
+
+    .main_content img {
+        width: 60%;
+    }
+
+    .main_content .greeting {
+        font-size: 30px;
+        left: 20%;
+    }
+
+    .main_content .info {
+        font-size: 16px;
+    }
+} */
